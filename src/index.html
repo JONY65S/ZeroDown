@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroDown - Mantenimiento Predictivo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>ZeroDown - Mantenimiento Predictivo</h1>
+    </header>
+
+    <main class="container mt-5">
+        <form id="formDatos">
+            <div class="form-group">
+                <label for="empresa">Seleccione una empresa:</label>
+                <select id="empresa" class="form-control" required>
+                    <option value="">--Seleccione--</option>
+                    <option value="AWS">AWS</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Motorola">Motorola</option>
+                    <option value="Danone">Danone</option>
+                    <option value="Bonafont">Bonafont</option>
+                    <option value="Kingston">Kingston</option>
+                </select>
+            </div>
+
+            <div id="formCampos"></div>
+
+            <button type="submit" class="btn btn-primary mt-3">Calcular Métricas</button>
+        </form>
+
+        <hr class="my-5">
+
+        <h3>Resultados:</h3>
+        <p><strong>Eficiencia:</strong> <span id="resultadoEficiencia">N/A</span>%</p>
+        <p><strong>Efectividad:</strong> <span id="resultadoEfectividad">N/A</span>%</p>
+        <p><strong>Probabilidad de Fallo:</strong> <span id="resultadoFallo">N/A</span>%</p>
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>© 2024 ZeroDown - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
